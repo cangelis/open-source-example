@@ -24,3 +24,5 @@ _Fork -> Branch -> Commit <-> Merge -> Pull Request_
 ***Pull Request / PR :*** fork ile çatalladığınız kopyanızı orjinal repo ile birleştirirsiniz.
 
 Bazı projelerde projeyi oluşturan ve yönetenler, contribute için kendi belirlediği kurallar koyarlar. PR lerin kendi belirledikleri bir branch üzerine yapılması gibi. 
+
+Ben editledim
