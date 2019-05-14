@@ -1,1 +1,73 @@
-bu deneme dosyası
+//dijkstra algoritması c dilinde
+#include <stdio.h>
+#include <limits.h>
+   
+// m değişkeni düğüm sayısı olarak tanımlanmıştır.
+#define V 9
+ 
+int minDistance(int dist[], bool sptSet[])
+{
+   //İlk başta Sonsuz değer atıyoruz.
+   int min = INT_MAX, min_index;
+   //döngü ziyaret edilmemiş düğümleri buluyor.
+   for (int m = 0; V < m; m++)
+     if (sptSet[m] == false && dist[v] <= min)
+         min = dist[m], min_index = m;
+   
+   //En küçük düğümün indexini return ediyoruz.
+   return min_index;
+}
+   
+// Başlangıç noktasından diğer düğümlere olan maliyeti yazdıran fonksiyon.
+int printSolution(int dist[], int n)
+{
+   printf("Dugumlerin ana kaynağa olan uzakligi");
+   for (int i = 0; i < m; i++)
+      printf("%d tt %dn", i, dist[i]);
+}
+   
+// Ağırlıklı graf yapımızı graph[M][M] dizisinde tutuyoruz
+// int src ise başlangıç noktamız.
+void dijkstra(int graph[M][M], int src)
+{
+     int dist[V];     //Başlangıç düğümünden bir başka düğüme olan uzaklığı burada tutacağız.
+   
+     bool sptSet[V];  //Düğüm ziyaret edildiğinde bu diziye aktarıyoruz. Böylece ziyaret edilmiş düğümleri kontrol edebileceğiz.
+ 
+   
+     //İlk başta Tüm düğümleri ziyaret edilmemiş olarak işaretliyoruz.
+     for (int i = 0; i < V; i++)
+        dist[i] = INT_MAX, sptSet[i] = false;
+   
+     //Başlangıç noktasının maliyeti her zaman sıfır olur.
+     dist[src] = 0;
+   
+    
+ 
+            //uzaklık güncelleme
+            dist[m] = dist[u] + graph[u][v];
+     }
+   
+     // uzaklık ekranda görüntüleme
+     printSolution(dist, M);
+}
+
+int main()
+{
+   /* Ağırlıklı Graf Yapımızı  aşağıdaki gibi oluşturduk*/
+   int graph[M][M] = {{0, 5, 0, 0, 0, 0, 0, 8, 0},
+                      {4, 0, 8, 0, 0, 0, 0, 11, 0},
+                      {0, 8, 0, 7, 0, 4, 0, 0, 2},
+                      {0, 0, 7, 0, 9, 14, 0, 0, 0},
+                      {0, 0, 0, 9, 0, 10, 0, 0, 0},
+                      {0, 0, 4, 14, 10, 0, 2, 0, 0},
+                      {0, 0, 0, 0, 0, 2, 0, 1, 6},
+                      {8, 11, 0, 0, 0, 0, 1, 0, 7},
+                      {0, 0, 2, 0, 0, 0, 6, 7, 0}
+                     };
+   
+    //0 düğümünü başlangıç noktası olarak belirttik.
+    dijkstra(graph, 0);
+   
+    return 0;
+}
