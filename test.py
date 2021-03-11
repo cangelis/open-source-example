@@ -1,3 +1,8 @@
 #-*- coding:utf-8 -*-
 
-print u"Python candır"
+print ("python candır")
+
+b = input("Lütfen bir kelime yazınız:")
+
+for i in b:
+    print (i)
