@@ -34,3 +34,4 @@ void merge(int arr[], int l, int m, int r)
         }
         k++;
     }
+bunlarıda ben yazdım
