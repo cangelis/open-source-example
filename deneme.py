@@ -1,5 +1,5 @@
-print "Pull Request Deneme" 
+print("Pull Request Deneme") 
 
-print "Pull requestine katki denemesi" // Yasin
+print("Pull requestine katki denemesi") // Yasin
 
-print "Pull requestine katki denemesi 2" // Talha
+print("Pull requestine katki denemesi 2") // Talha
