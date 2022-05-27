@@ -25,6 +25,13 @@ _Fork -> Branch -> Commit <-> Merge -> Pull Request_
 
 Bazı projelerde projeyi oluşturan ve yönetenler, contribute için kendi belirlediği kurallar koyarlar. PR lerin kendi belirledikleri bir branch üzerine yapılması gibi. 
 
+--------------------------------------------------------------------
+
 Ben editledim
 
 This regulation was made by YasinAkca.
+
+This regulation was made by SerdarOnculer.
+
+
+
