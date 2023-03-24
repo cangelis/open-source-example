@@ -30,3 +30,4 @@ Ben editledim
 This regulation was made by YasinAkca.
 
 deneme
+deneme devam
