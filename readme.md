@@ -28,3 +28,5 @@ Bazı projelerde projeyi oluşturan ve yönetenler, contribute için kendi belir
 Ben editledim
 
 This regulation was made by YasinAkca.
+
+deneme
